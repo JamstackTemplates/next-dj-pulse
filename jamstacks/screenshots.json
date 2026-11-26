@@ -1,0 +1,22 @@
+{
+  "templateId": "next-dj-pulse",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "fullPage": false,
+  "captures": [
+    {
+      "mode": "light",
+      "sha256": "9754c8c867e501465e4404daa62254698a17114b178e701321325465ab4e8618",
+      "file": "jamstacks/home-light.jpg",
+      "bytes": 189765
+    },
+    {
+      "mode": "dark",
+      "sha256": "80b2cb9b9d8330f2d789b005633955c01c15f76fa529bbf406be23d26cee4d29",
+      "file": "jamstacks/home-dark.jpg",
+      "bytes": 197237
+    }
+  ]
+}

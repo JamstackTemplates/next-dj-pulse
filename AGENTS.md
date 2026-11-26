@@ -17,16 +17,16 @@ The `.claude/skills/` folder holds `write-plan` (drafts `plan/PLAN.md`) and `cle
 
 ## Structure and content
 
-`content/business.ts` holds the starter's shared business details and sample copy. When building a
-site, write page-specific copy directly in the route's `app/**/page.tsx` as JSX children of named React
-components. Put headings, calls to action, labels and captions in page order. Backing components
-own the semantic markup, Tailwind styles, accessibility and behavior. Keep typed data in `content/`
-for values the site reads programmatically, including contact details and structured collections.
-Document fields and validate IDs, required
-fields, prices, availability and references with item-specific failures. Rename in content and
-site.config.json. Keep the provisioner's config shape: name, description, domain, optional timeZone,
-jamstacks.siteId/cdnUrl and optional provisioningId. Business data never goes there. Reuse the design's
-illustrations and palette rather than adding unrelated assets.
+`content/business.ts` holds Midnight Pulse DJ's shared business details, service area, booking-line
+hours and enquiry guidance. Structured collections live in `content/packages.ts`, `content/gear.ts`,
+`content/mixes.ts` and `content/djs.ts` (validated by `tests/content.test.ts` and
+`tests/estimate.test.ts`). Page-specific copy lives directly in each route's `app/**/page.tsx`
+(`/`, `/packages/`, `/gear/`, `/mixes/`, `/contact/` and `app/not-found.tsx`) as JSX children of
+named React components. Backing components in `components/` and `components/art/` own the semantic
+markup, Tailwind styles, inline SVG art, accessibility and interactions. Rename in `content/business.ts`
+and `site.config.json`. Keep the provisioner's config shape: name, description, domain, optional
+timeZone, jamstacks.siteId/cdnUrl and optional provisioningId. Business data never goes there. Reuse
+the design's illustrations and palette rather than adding unrelated assets.
 
 ## Styling: Tailwind CSS v4
 
